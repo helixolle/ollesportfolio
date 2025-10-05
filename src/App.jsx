@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Sidebar from './components/Sidebar'
 import MainContent from './components/MainContent'
@@ -8,11 +8,13 @@ import MobileMenu from './components/MobileMenu'
 import CustomCursor from './components/CustomCursor'
 import FloatingThemeButton from './components/FloatingThemeButton'
 
+
 function AppContent() {
   const [activeSection, setActiveSection] = useState('about')
   const [isMobile, setIsMobile] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
+
 
   useEffect(() => {
     const checkMobile = () => {
@@ -27,10 +29,12 @@ function AppContent() {
     }
   }, [])
 
+
   // Close mobile menu when route changes
   useEffect(() => {
     setSidebarOpen(false)
   }, [location])
+
 
   const scrollToSection = (sectionId) => {
     if (location.pathname !== '/') {
@@ -45,12 +49,15 @@ function AppContent() {
     }
   }
 
+
   const isProjectPage = location.pathname !== '/'
+
 
   return (
     <div className="min-h-screen bg-custom relative">
       {/* Custom Cursor - only on desktop */}
       {!isMobile && <CustomCursor />}
+
 
       {isMobile && (
         <MobileMenu 
@@ -58,6 +65,7 @@ function AppContent() {
           onToggle={() => setSidebarOpen(!sidebarOpen)}
         />
       )}
+
 
       {!isMobile && <FloatingThemeButton />}
             <motion.div 
@@ -101,6 +109,7 @@ function AppContent() {
   )
 }
 
+
 function App() {
   return (
     <Router>
@@ -108,5 +117,6 @@ function App() {
     </Router>
   )
 }
+
 
 export default App
