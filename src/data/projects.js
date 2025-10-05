@@ -12,7 +12,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Bezi', 'Adobe Illustrator', 'Blender'],
     tags: ['AR', 'Cognitive Accessibility', 'Wayfinding', 'User Research'],
-    coverImage: '/images/thumbs/arnavigation_omslag.png',
+    coverImage: '${import.meta.env.BASE_URL}images/thumbs/arnavigation_omslag.png',
     heroVideo: 'https://player.vimeo.com/video/1067061936', // Add your video
     videoType: 'vertical',
     overview: 'Navigating large public indoor spaces like libraries can be challenging, especially for people with cognitive impairments. This project explored how Augmented Reality (AR) could improve wayfinding in such environments by providing real-time visual guidance directly through the user\'s smartphone camera.',
@@ -46,7 +46,7 @@ export const projects = {
         type: 'approach',
         title: 'Design Process',
         content: 'I followed a User-Centered Design approach, iterating through Research, Requirements, Design, and Evaluation phases. This ensured the solution directly addressed real user needs rather than assumed problems.',
-        images: ['https://public-media.interaction-design.org/images/uploads/2737d331018d4207a7bf7f5e90eebec0.png'],
+        images: ['https://public-media.interaction-design.org${import.meta.env.BASE_URL}images/uploads/2737d331018d4207a7bf7f5e90eebec0.png'],
       },
       {
         type: 'solution',
@@ -61,13 +61,13 @@ export const projects = {
           'Clear completion message when user reaches their goal'
         ],
         content2: 'Broken down into categories the requirements were as following:',
-        images: ['/images/ar-navigation/req_table.png']
+        images: ['${import.meta.env.BASE_URL}images/ar-navigation/req_table.png']
       },
       {
         type: 'process',
         title: 'Design Development',
         content: 'The design evolved from initial sketches through wireframes and mockups to a functional AR prototype. I focused on creating the simplest possible interface while maintaining full functionality for library navigation.',
-        images: ['/images/ar-navigation/sketches.png', '/images/ar-navigation/wireframe.png', '/images/ar-navigation/mockup.png']
+        images: ['${import.meta.env.BASE_URL}images/ar-navigation/sketches.png', '${import.meta.env.BASE_URL}images/ar-navigation/wireframe.png', '${import.meta.env.BASE_URL}images/ar-navigation/mockup.png']
       },
       {
         type: 'solution',
@@ -119,8 +119,8 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Illustrator'],
     tags: ['Browser Extension', 'News Analysis', 'Interface Design', 'Prototype'],
-    coverImage: '/images/thumbs/OS_omslag.png',
-    heroImage: '/images/thumbs/OS_omslag.png',
+    coverImage: '${import.meta.env.BASE_URL}images/thumbs/OS_omslag.png',
+    heroImage: '${import.meta.env.BASE_URL}images/thumbs/OS_omslag.png',
     heroVideo: 'https://vimeo.com/932809964',
     videoType: 'horizontal',
     overview: 'This project aimed to develop OriginStory, a browser extension designed to empower news consumers with a deeper understanding of news narratives.',
@@ -144,7 +144,7 @@ export const projects = {
         type: 'discovery',
         title: 'User Research',
         content: 'Based on the service description provided by our teacher, I brainstormed potential user needs and benefits. After this session I discussed the result with my teacher and two of my classmates. During this session I also brainstormed around different needs and certain functions the service could have. It also resulted with three simple persona descriptions.',
-        images: ['/images/originstory/Brainstorm_users.png']
+        images: ['${import.meta.env.BASE_URL}images/originstory/Brainstorm_users.png']
       },
       {
         type: 'discovery',
@@ -155,25 +155,25 @@ export const projects = {
         type: 'approach',
         title: 'Design - Sketches',
         content: 'I began by sketching a low-fidelity design of the service, which helped me identify key interface patterns. As these patterns emerged, I translated my sketches into wireframes in Figma to better understand the layout and refine the design. While working on the main page, I also explored different variations of the filter box, experimenting with ways to improve usability. These sketches later evolved into wireframes.',
-        images: ['/images/originstory/skisser.png']
+        images: ['${import.meta.env.BASE_URL}images/originstory/skisser.png']
       },
       {
         type: 'approach',
         title: 'Wireframes',
         content: 'While developing the wireframes, I identified two key interface patterns in my design and focused on expanding them: \n **Dashboard View** \n - This pattern provides a central hub where users can access key information and features. In OriginStory, this takes the form of a map of interconnected news sources, giving users an overview of how different stories relate to each other. \n **Canvas Plus Palette** \n - This pattern structures the interface with a central workspace (the canvas) and surrounding tools (the palette) for interacting with content. In OriginStory, the map view serves as the canvas, while the filter panel acts as the palette, allowing users to refine their view and focus on specific aspects of the news landscape.',
-        images: ['src/assets//images/originstory/Wireframes_Main.png']
+        images: ['src/assets/${import.meta.env.BASE_URL}images/originstory/Wireframes_Main.png']
       },
       {
         type: 'solution',
         title: 'Interactive Prototype',
         content: 'The main page of OriginStory presents users with a clear and structured map view, offering a condensed yet comprehensive overview of key information. This interactive visualization allows users to efficiently navigate interconnected news stories. Clicking on a node reveals detailed information about that specific story. Users can also engage with the content by commenting on nodes or upvoting/downvoting others\' comments. The filter button allows users to refine their search, helping them focus on specific aspects or perspectives within a news story.',
-        images: ['/images/originstory/interactive1.png', '/images/originstory/interactive2.png', '/images/originstory/interactive3.png']
+        images: ['${import.meta.env.BASE_URL}images/originstory/interactive1.png', '${import.meta.env.BASE_URL}images/originstory/interactive2.png', '${import.meta.env.BASE_URL}images/originstory/interactive3.png']
       },
       {
         type: 'solution',
         title: 'Enhancing the User Experience',
         content: 'While developing the interactive prototype, I integrated two additional interface patterns to improve usability: \n **Animated Transitions** \n- Subtle animations enhance the user experience by providing visual feedback during interactions. In OriginStory, I implemented animations for hover states, selection states, and zooming within the map view, making navigation feel more intuitive and fluid. \n **Spinners and Loading Indicators** \n- To ensure users receive clear feedback when the system is processing data, I incorporated spinner animations that appear when applying filters to the map view.',
-        images: ['/images/originstory/animatedtrans.gif', '/images/originstory/spinners.gif']
+        images: ['${import.meta.env.BASE_URL}images/originstory/animatedtrans.gif', '${import.meta.env.BASE_URL}images/originstory/spinners.gif']
       },
       {
         type: 'approach',
@@ -184,7 +184,7 @@ export const projects = {
         type: 'solution',
         title: 'Logo Design',
         content: 'The "OS" logo features bold, interconnected letterforms, symbolizing the relationship between different news sources. The intentional separation within the letters represents how some sources may drift away from the original narrative—whether through shifts in terminology, framing, or bias—illustrating the evolving nature of news stories.',
-        images: ['/images/originstory/Logo.png']
+        images: ['${import.meta.env.BASE_URL}images/originstory/Logo.png']
       },
       {
         type: 'conclusion',
@@ -204,7 +204,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Pen & Paper', 'Video prototyping'],
     tags: ['Mobile App', 'Creator Economy', 'Community Platform', 'User Research'],
-    coverImage: '/images/thumbs/2gether_omslag.png',
+    coverImage: '${import.meta.env.BASE_URL}images/thumbs/2gether_omslag.png',
     heroImage: null,
     heroVideo: 'https://player.vimeo.com/video/937755072', // Add your prototype walkthrough video
     videoType: 'horizontal',
@@ -239,7 +239,7 @@ Through persona development, I identified three key user scenarios that would dr
           'Project collaboration features are essential for community building',
           'Simple, mobile-first design is crucial for busy creators'
         ],
-        images: ['/images/2gether/persona.png']
+        images: ['${import.meta.env.BASE_URL}images/2gether/persona.png']
       },
       {
         type: 'approach',
@@ -251,7 +251,7 @@ Through persona development, I identified three key user scenarios that would dr
 **Scenario 3: Starting a new photo project**
 
 These scenarios guided every design decision, from information architecture to interaction patterns.`,
-        images: ['/images/2gether/scenario.png']
+        images: ['${import.meta.env.BASE_URL}images/2gether/scenario.png']
       },
       {
         type: 'process',
@@ -261,7 +261,7 @@ These scenarios guided every design decision, from information architecture to i
 **Sketches** → **Paper Prototype** → **Wireframes** → **Mockups** → **Interactive Prototype**
 
 Each stage built upon insights from the previous, ensuring the final design was both user-centered and technically feasible.`,
-        images: ['/images/2gether/sketches.png', '/images/2gether/Paper_prototype.png']
+        images: ['${import.meta.env.BASE_URL}images/2gether/sketches.png', '${import.meta.env.BASE_URL}images/2gether/Paper_prototype.png']
       },
       {
         type: 'solution',
@@ -303,7 +303,7 @@ I then created **four key graphical mockups** establishing a modern, cohesive de
 - **Search Results** - Clear filtering and discovery tools  
 - **Product Page** - Detailed content presentation with creator info
 - **Profile Page** - Personal dashboard for creators`,
-        images: ['/images/2gether/wireframes.png', '/images/2gether/mockup.png']
+        images: ['${import.meta.env.BASE_URL}images/2gether/wireframes.png', '${import.meta.env.BASE_URL}images/2gether/mockup.png']
       },
       {
         type: 'solution',
@@ -355,7 +355,7 @@ The result prioritizes **usability, accessibility, and community** - exactly wha
     team: 'Team of 5 interaction design students',
     tools: ['Figma', 'Miro', 'Blender', 'User Research'],
     tags: ['IoT Product', 'Pet Care', 'Mobile App', 'Physical Design', 'User Testing'],
-    coverImage: '/images/thumbs/aquatik_omslag.png',
+    coverImage: '${import.meta.env.BASE_URL}images/thumbs/aquatik_omslag.png',
     heroImage: null,
     heroVideo: 'https://player.vimeo.com/video/932816565',
     videoType: 'horizontal',
@@ -422,7 +422,7 @@ We developed **detailed personas** representing different types of pet owners, e
           'Multi-pet households require individual tracking capabilities',
           'Seasonal monitoring needs vary significantly throughout the year'
         ],
-        images: ['/images/aquatik/personanicole.png', '/images/aquatik/personaoscar.png', '/images/aquatik/storyboard.png']
+        images: ['${import.meta.env.BASE_URL}images/aquatik/personanicole.png', '${import.meta.env.BASE_URL}images/aquatik/personaoscar.png', '${import.meta.env.BASE_URL}images/aquatik/storyboard.png']
       },
       {
         type: 'approach',
@@ -430,7 +430,7 @@ We developed **detailed personas** representing different types of pet owners, e
         content: `Based on research insights, we created a **comprehensive requirements list** defining both functional and non-functional needs for the system.
 
 **Key finding:** Respondents unanimously wanted **a system combining a physical product and an app** connected to the physical device. This insight became the foundation of our design approach.`,
-        images: ['/images/aquatik/req_list.png']
+        images: ['${import.meta.env.BASE_URL}images/aquatik/req_list.png']
       },
 
       {
@@ -443,7 +443,7 @@ We developed **detailed personas** representing different types of pet owners, e
 **Iterative refinement:** We moved from individual concepts to unified direction through structured team collaboration
 
 This approach ensured diverse perspectives while maintaining design consistency.`,
-        images: ['/images/aquatik/1registrera.png', '/images/aquatik/2startsida.png', '/images/aquatik/3halsosidan.png']
+        images: ['${import.meta.env.BASE_URL}images/aquatik/1registrera.png', '${import.meta.env.BASE_URL}images/aquatik/2startsida.png', '${import.meta.env.BASE_URL}images/aquatik/3halsosidan.png']
       },
       {
         type: 'solution',
@@ -453,7 +453,7 @@ This approach ensured diverse perspectives while maintaining design consistency.
 From wireframes, we developed **high-fidelity mockups** to establish the app's visual aesthetic and ensure a cohesive design system that would appeal to pet owners.
 
 The final step was creating a **fully interactive prototype** with realistic transitions and micro-interactions, essential for comprehensive usability testing and stakeholder validation.`,
-        images: ['/images/aquatik/wireframes.png', '/images/aquatik/mockup.png']
+        images: ['${import.meta.env.BASE_URL}images/aquatik/wireframes.png', '${import.meta.env.BASE_URL}images/aquatik/mockup.png']
       },
     
 {
@@ -470,7 +470,7 @@ videoType: 'horizontal'
 **My contribution:** Having **3D modeling experience**, I took charge of creating detailed 3D prototypes in Blender based on our collaborative initial sketches and design requirements.
 
 The final design balances **aesthetic appeal with functional sensor integration**, ensuring accurate water level monitoring while maintaining an attractive appearance for home environments.`,
-        images: ['/images/aquatik/sketches_physical.png', '/images/aquatik/StudioBlue.png', '/images/aquatik/StudioWhite.png', '/images/aquatik/StudioWood.png']
+        images: ['${import.meta.env.BASE_URL}images/aquatik/sketches_physical.png', '${import.meta.env.BASE_URL}images/aquatik/StudioBlue.png', '${import.meta.env.BASE_URL}images/aquatik/StudioWhite.png', '${import.meta.env.BASE_URL}images/aquatik/StudioWood.png']
       },
 
 
@@ -544,8 +544,8 @@ This project showcased the importance of **user-centered design processes** and 
   team: 'Solo project',
   tools: ['Blender', 'Nuke'],
   tags: ['3D Animation', 'Compositing', 'VFX', 'Personal Project'],
-  coverImage: '/images/thumbs/heli_omslag.png',
-  heroImage: '/images/thumbs/heli_omslag.png',
+  coverImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
+  heroImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
   heroVideo: 'https://player.vimeo.com/video/404583460',
   videoType: 'horizontal',
   overview: `A personal VFX project compositing a 3D animated helicopter into real drone footage. This project was made for fun and became a valuable learning experience through community feedback.`,
@@ -582,8 +582,8 @@ Nuke was also used to **3D track the footage** to get accurate data for the 3D a
   team: 'VFX Artist (solo VFX work)',
   tools: ['Cinema 4D', 'Redshift', 'Fusion'],
   tags: ['3D Animation', 'Particle Systems', 'Compositing', 'Film VFX'],
-  coverImage: '/images/hallbart-professionell/cover.jpg',
-  heroImage: '//images/thumbs/hallbart_omslag.png',
+  coverImage: '${import.meta.env.BASE_URL}images/hallbart-professionell/cover.jpg',
+  heroImage: '/${import.meta.env.BASE_URL}images/thumbs/hallbart_omslag.png',
   heroVideo: 'https://player.vimeo.com/video/405839073',
   videoType: 'horizontal',
   overview: `VFX work for the Swedish short film **"Hållbart Professionell"** by Sebastian Johansson Micci. This was my **first "real" project** where I learned a great deal about production workflows.`,
@@ -618,7 +618,7 @@ Doing this I learned a lot by **trial and error**.`
   tools: ['Nuke'],
   tags: ['Screen Replacement', 'Tracking', 'Compositing'],
   coverImage: null,
-  heroImage: '/images/thumbs/screen_omslag.png',
+  heroImage: '${import.meta.env.BASE_URL}images/thumbs/screen_omslag.png',
   heroVideo: 'https://player.vimeo.com/video/411725143',
   videoType: 'horizontal',
   overview: `A learning project focused on **advanced screen replacement techniques** using Nuke. I replaced a green screen on a phone with helicopter footage, adding realistic reflections and screen imperfections.`,
