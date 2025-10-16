@@ -58,7 +58,7 @@ export const projects = {
         type: 'approach',
         title: 'Design Process',
         content: 'I followed a User-Centered Design approach, iterating through Research, Requirements, Design, and Evaluation phases. This ensured the solution directly addressed real user needs rather than assumed problems.',
-        images: ['https://public-media.interaction-design.org${import.meta.env.BASE_URL}images/uploads/2737d331018d4207a7bf7f5e90eebec0.png'],
+        images: ['https://public-media.interaction-design.org/images/uploads/2737d331018d4207a7bf7f5e90eebec0.png'],
       },
       {
         type: 'solution',
@@ -73,7 +73,7 @@ export const projects = {
           'Clear completion message when user reaches their goal'
         ],
         content2: 'Broken down into categories the requirements were as following:',
-        images: ['${import.meta.env.BASE_URL}images/ar-navigation/req_table.png']
+        images: allImages['ar-navigation/req_table']
       },
       {
         type: 'process',
