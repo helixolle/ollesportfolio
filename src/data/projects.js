@@ -24,7 +24,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Bezi', 'Adobe Illustrator', 'Blender'],
     tags: ['AR', 'Cognitive Accessibility', 'Wayfinding', 'User Research'],
-    coverImage: [allImages[thumbs/arnavigation_omslag]],
+    coverImage: allImages['thumbs/arnavigation_omslag'],
     heroVideo: 'https://player.vimeo.com/video/1067061936', // Add your video
     videoType: 'vertical',
     overview: 'Navigating large public indoor spaces like libraries can be challenging, especially for people with cognitive impairments. This project explored how Augmented Reality (AR) could improve wayfinding in such environments by providing real-time visual guidance directly through the user\'s smartphone camera.',
@@ -467,13 +467,13 @@ From wireframes, we developed **high-fidelity mockups** to establish the app's v
 The final step was creating a **fully interactive prototype** with realistic transitions and micro-interactions, essential for comprehensive usability testing and stakeholder validation.`,
         images: ['${import.meta.env.BASE_URL}images/aquatik/wireframes.png', '${import.meta.env.BASE_URL}images/aquatik/mockup.png']
       },
-    
-{
-  type: 'solution',
-video: 'https://player.vimeo.com/video/933710075',
-videoType: 'horizontal'
-},
-      
+
+      {
+        type: 'solution',
+        video: 'https://player.vimeo.com/video/933710075',
+        videoType: 'horizontal'
+      },
+
       {
         type: 'solution',
         title: 'Physical Product Design',
@@ -486,11 +486,11 @@ The final design balances **aesthetic appeal with functional sensor integration*
       },
 
 
-{
-  type: 'solution',
-video: 'https://player.vimeo.com/video/933742728',
-videoType: 'horizontal'
-},
+      {
+        type: 'solution',
+        video: 'https://player.vimeo.com/video/933742728',
+        videoType: 'horizontal'
+      },
 
 
 
@@ -547,108 +547,108 @@ This project showcased the importance of **user-centered design processes** and 
 
   // VFX Projects (showcase focused)
   'helicopter-vfx': {
-  id: 'helicopter-vfx',
-  title: 'Helicopter VFX Composite',
-  subtitle: 'Integrating 3D animated helicopter into drone footage using Blender and Nuke',
-  type: 'vfx',
-  year: '2020',
-  duration: '4 weeks',
-  team: 'Solo project',
-  tools: ['Blender', 'Nuke'],
-  tags: ['3D Animation', 'Compositing', 'VFX', 'Personal Project'],
-  coverImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
-  heroImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
-  heroVideo: 'https://player.vimeo.com/video/404583460',
-  videoType: 'horizontal',
-  overview: `A personal VFX project compositing a 3D animated helicopter into real drone footage. This project was made for fun and became a valuable learning experience through community feedback.`,
-  sections: [
-    {
-      type: 'solution',
-      title: '3D Animation',
-      content: `The helicopter is an **asset found online** and was animated using **Blender** and rendered using Blender's render engine **"Cycles"**.`,
-    },
-    {
-      type: 'solution', 
-      title: 'Compositing',
-      content: `The 3D animated asset was **composited onto the drone footage** using **Nuke**.
+    id: 'helicopter-vfx',
+    title: 'Helicopter VFX Composite',
+    subtitle: 'Integrating 3D animated helicopter into drone footage using Blender and Nuke',
+    type: 'vfx',
+    year: '2020',
+    duration: '4 weeks',
+    team: 'Solo project',
+    tools: ['Blender', 'Nuke'],
+    tags: ['3D Animation', 'Compositing', 'VFX', 'Personal Project'],
+    coverImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
+    heroImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
+    heroVideo: 'https://player.vimeo.com/video/404583460',
+    videoType: 'horizontal',
+    overview: `A personal VFX project compositing a 3D animated helicopter into real drone footage. This project was made for fun and became a valuable learning experience through community feedback.`,
+    sections: [
+      {
+        type: 'solution',
+        title: '3D Animation',
+        content: `The helicopter is an **asset found online** and was animated using **Blender** and rendered using Blender's render engine **"Cycles"**.`,
+      },
+      {
+        type: 'solution',
+        title: 'Compositing',
+        content: `The 3D animated asset was **composited onto the drone footage** using **Nuke**.
 
 Nuke was also used to **3D track the footage** to get accurate data for the 3D animation's render camera.`,
-    },
-    {
-      type: 'conclusion',
-      title: 'Conclusion',
-      content: `This project was **personally made for fun**, where I learned a lot by getting constant feedback from the subreddit **r/Blender** and **r/vfx**.
+      },
+      {
+        type: 'conclusion',
+        title: 'Conclusion',
+        content: `This project was **personally made for fun**, where I learned a lot by getting constant feedback from the subreddit **r/Blender** and **r/vfx**.
 
 **Some improvements** that could be made are mostly around the **shadow from the helicopter** being cast on the mountain side. Due to some difficulties getting a highly accurate point cloud to recreate the mountain side, I wasn't able to make the shadow follow the surface in a convincing way.`
-    }
-  ]
-},
+      }
+    ]
+  },
 
-'hallbart-professionell': {
-  id: 'hallbart-professionell',
-  title: 'Hållbart Professionell',
-  subtitle: 'VFX work for Swedish short film creating animated planes flying across the sky',
-  type: 'vfx',
-  year: '2020',
-  duration: '6 weeks',
-  team: 'VFX Artist (solo VFX work)',
-  tools: ['Cinema 4D', 'Redshift', 'Fusion'],
-  tags: ['3D Animation', 'Particle Systems', 'Compositing', 'Film VFX'],
-  coverImage: '${import.meta.env.BASE_URL}images/hallbart-professionell/cover.jpg',
-  heroImage: '/${import.meta.env.BASE_URL}images/thumbs/hallbart_omslag.png',
-  heroVideo: 'https://player.vimeo.com/video/405839073',
-  videoType: 'horizontal',
-  overview: `VFX work for the Swedish short film **"Hållbart Professionell"** by Sebastian Johansson Micci. This was my **first "real" project** where I learned a great deal about production workflows.`,
-  sections: [
-    {
-      type: 'solution',
-      title: '3D Animation',
-      content: `The 3D material was made using **Cinema 4D and Redshift**. Using a **particle system** the planes were generated on each point to simulate a field of planes flying across the sky.`,
-    },
-    {
-      type: 'solution', 
-      title: 'Compositing',
-      content: `I used **Fusion** to composite the rendered material over the shot footage. I created **luma keys** to separate the foreground with the background and I also made some smaller clean-ups.`,
-    },
-    {
-      type: 'conclusion',
-      title: 'Conclusion',
-      content: `This was my **first "real" project** and I learnt a great deal in how a production works. I had to learn new software to be able to render out final shots in **4K** which software I previously knew couldn't due to restrictions in their student plans. 
+  'hallbart-professionell': {
+    id: 'hallbart-professionell',
+    title: 'Hållbart Professionell',
+    subtitle: 'VFX work for Swedish short film creating animated planes flying across the sky',
+    type: 'vfx',
+    year: '2020',
+    duration: '6 weeks',
+    team: 'VFX Artist (solo VFX work)',
+    tools: ['Cinema 4D', 'Redshift', 'Fusion'],
+    tags: ['3D Animation', 'Particle Systems', 'Compositing', 'Film VFX'],
+    coverImage: '${import.meta.env.BASE_URL}images/hallbart-professionell/cover.jpg',
+    heroImage: '/${import.meta.env.BASE_URL}images/thumbs/hallbart_omslag.png',
+    heroVideo: 'https://player.vimeo.com/video/405839073',
+    videoType: 'horizontal',
+    overview: `VFX work for the Swedish short film **"Hållbart Professionell"** by Sebastian Johansson Micci. This was my **first "real" project** where I learned a great deal about production workflows.`,
+    sections: [
+      {
+        type: 'solution',
+        title: '3D Animation',
+        content: `The 3D material was made using **Cinema 4D and Redshift**. Using a **particle system** the planes were generated on each point to simulate a field of planes flying across the sky.`,
+      },
+      {
+        type: 'solution',
+        title: 'Compositing',
+        content: `I used **Fusion** to composite the rendered material over the shot footage. I created **luma keys** to separate the foreground with the background and I also made some smaller clean-ups.`,
+      },
+      {
+        type: 'conclusion',
+        title: 'Conclusion',
+        content: `This was my **first "real" project** and I learnt a great deal in how a production works. I had to learn new software to be able to render out final shots in **4K** which software I previously knew couldn't due to restrictions in their student plans. 
 
 Doing this I learned a lot by **trial and error**.`
-    }
-  ]
-},
-'screen-replacement': {
-  id: 'screen-replacement',
-  title: 'Screen Replacement',
-  subtitle: 'Advanced screen replacement techniques using Nuke with realistic reflections and imperfections',
-  type: 'vfx',
-  year: '2020',
-  duration: '3 weeks',
-  team: 'Solo project',
-  tools: ['Nuke'],
-  tags: ['Screen Replacement', 'Tracking', 'Compositing'],
-  coverImage: null,
-  heroImage: '${import.meta.env.BASE_URL}images/thumbs/screen_omslag.png',
-  heroVideo: 'https://player.vimeo.com/video/411725143',
-  videoType: 'horizontal',
-  overview: `A learning project focused on **advanced screen replacement techniques** using Nuke. I replaced a green screen on a phone with helicopter footage, adding realistic reflections and screen imperfections.`,
-  sections: [
-    {
-      type: 'challenge',
-      title: 'The Project',
-      content: `I wanted to learn some more **advanced screen replacement** using Nuke so I did this project to showcase this. I used footage I previously created of a helicopter scene to replace on a phone with a **green screen** on it.`
-    },
-    {
-      type: 'solution',
-      title: 'Compositing',
-      content: `For this project I used **Nuke** to create the screen replacement. I **tracked the screen** and used various methods to **preserve reflections** to overlay on top of the added footage. 
+      }
+    ]
+  },
+  'screen-replacement': {
+    id: 'screen-replacement',
+    title: 'Screen Replacement',
+    subtitle: 'Advanced screen replacement techniques using Nuke with realistic reflections and imperfections',
+    type: 'vfx',
+    year: '2020',
+    duration: '3 weeks',
+    team: 'Solo project',
+    tools: ['Nuke'],
+    tags: ['Screen Replacement', 'Tracking', 'Compositing'],
+    coverImage: null,
+    heroImage: '${import.meta.env.BASE_URL}images/thumbs/screen_omslag.png',
+    heroVideo: 'https://player.vimeo.com/video/411725143',
+    videoType: 'horizontal',
+    overview: `A learning project focused on **advanced screen replacement techniques** using Nuke. I replaced a green screen on a phone with helicopter footage, adding realistic reflections and screen imperfections.`,
+    sections: [
+      {
+        type: 'challenge',
+        title: 'The Project',
+        content: `I wanted to learn some more **advanced screen replacement** using Nuke so I did this project to showcase this. I used footage I previously created of a helicopter scene to replace on a phone with a **green screen** on it.`
+      },
+      {
+        type: 'solution',
+        title: 'Compositing',
+        content: `For this project I used **Nuke** to create the screen replacement. I **tracked the screen** and used various methods to **preserve reflections** to overlay on top of the added footage. 
 
 To make it more realistic I also added **smudges and imperfections** to the screen.`,
-    }
-  ]
-}
+      }
+    ]
+  }
 
 
 }
