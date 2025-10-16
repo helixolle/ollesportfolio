@@ -12,7 +12,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Bezi', 'Adobe Illustrator', 'Blender'],
     tags: ['AR', 'Cognitive Accessibility', 'Wayfinding', 'User Research'],
-    coverImage: '${import.meta.env.BASE_URL}images/thumbs/arnavigation_omslag.png',
+    coverImage: 'public/images/thumbs/arnavigation_omslag.png',
     heroVideo: 'https://player.vimeo.com/video/1067061936', // Add your video
     videoType: 'vertical',
     overview: 'Navigating large public indoor spaces like libraries can be challenging, especially for people with cognitive impairments. This project explored how Augmented Reality (AR) could improve wayfinding in such environments by providing real-time visual guidance directly through the user\'s smartphone camera.',

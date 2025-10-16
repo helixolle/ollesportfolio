@@ -153,7 +153,7 @@ const SidebarContent = ({ sections, activeSection, onSectionClick, onSectionTogg
           onClick={onBackToHome}
         >
           <img 
-            src="src\assets\images\portrait2.JPG"
+            src="public/images/portrait2.JPG"
             alt="Olle Lomberg Davegård" 
             className="w-full h-full object-cover"
           />
