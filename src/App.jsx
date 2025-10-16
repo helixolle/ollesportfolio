@@ -8,7 +8,6 @@ import MobileMenu from './components/MobileMenu'
 import CustomCursor from './components/CustomCursor'
 import FloatingThemeButton from './components/FloatingThemeButton'
 import ScrollToTop from './components/ScrollToTop'
-import { pageview } from './analytics'
 
 function AppContent() {
   const [activeSection, setActiveSection] = useState('about')
@@ -16,29 +15,26 @@ function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
 
-  // Track page views
-  useEffect(() => {
-    pageview(location.pathname)
-  }, [location.pathname]) // Added dependency
 
-  // Handle mobile detection
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 1024)
     }
-
+    
     checkMobile()
     window.addEventListener('resize', checkMobile)
-
+    
     return () => {
       window.removeEventListener('resize', checkMobile)
     }
-  }, []) // Fixed closing bracket
+  }, [])
+
 
   // Close mobile menu when route changes
   useEffect(() => {
     setSidebarOpen(false)
   }, [location])
+
 
   const scrollToSection = (sectionId) => {
     if (location.pathname !== '/') {
@@ -53,30 +49,40 @@ function AppContent() {
     }
   }
 
+
   const isProjectPage = location.pathname !== '/'
+
 
   return (
     <div className="min-h-screen bg-custom relative">
       {/* Custom Cursor - only on desktop */}
       {!isMobile && <CustomCursor />}
 
+
       {isMobile && (
-        <MobileMenu
+        <MobileMenu 
           isOpen={sidebarOpen}
           onToggle={() => setSidebarOpen(!sidebarOpen)}
         />
       )}
 
+
       {!isMobile && <FloatingThemeButton />}
+            <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-7xl mx-auto flex relative z-10"
+      ></motion.div>
       
       {/* Container - Immediate entrance animation */}
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="max-w-7xl mx-auto flex relative z-10"
       >
-        <Sidebar
+        <Sidebar 
           activeSection={activeSection}
           onSectionClick={scrollToSection}
           isMobile={isMobile}
@@ -85,16 +91,16 @@ function AppContent() {
           isProjectPage={isProjectPage}
           currentProject={isProjectPage ? location.pathname.slice(1) : null}
         />
-
+        
         <Routes>
-          <Route
-            path="/"
+          <Route 
+            path="/" 
             element={
-              <MainContent
+              <MainContent 
                 onSectionChange={setActiveSection}
                 isMobile={isMobile}
               />
-            }
+            } 
           />
           <Route path="/:projectId" element={<ProjectPage />} />
         </Routes>
@@ -102,6 +108,7 @@ function AppContent() {
     </div>
   )
 }
+
 
 function App() {
   return (
@@ -111,5 +118,6 @@ function App() {
     </Router>
   )
 }
+
 
 export default App
