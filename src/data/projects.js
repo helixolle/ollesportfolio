@@ -73,7 +73,7 @@ export const projects = {
           'Clear completion message when user reaches their goal'
         ],
         content2: 'Broken down into categories the requirements were as following:',
-        images: allImages['ar-navigation/req_table']
+        images: [allImages['ar-navigation/req_table']]
       },
       {
         type: 'process',
