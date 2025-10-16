@@ -8,7 +8,7 @@ function ScrollToTop() {
     // Add a small delay to ensure content is loaded
     setTimeout(() => {
       window.scrollTo(0, 0)
-    }, 100)
+    }, 120)
   }, [pathname])
 
   return null

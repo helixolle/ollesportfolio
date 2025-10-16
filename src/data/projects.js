@@ -269,7 +269,7 @@ Through persona development, I identified three key user scenarios that would dr
           'Simple, mobile-first design is crucial for busy creators'
         ],
         images: [
-          allImages['2gether/persona']
+          allImages['2gether/Persona']
         ]
       },
       {
@@ -295,7 +295,7 @@ These scenarios guided every design decision, from information architecture to i
 
 Each stage built upon insights from the previous, ensuring the final design was both user-centered and technically feasible.`,
         images: [
-          allImages['2gether/sketches'],
+          allImages['2gether/Sketches'],
           allImages['2gether/Paper_prototype']
         ]
       },
@@ -398,9 +398,9 @@ The result prioritizes **usability, accessibility, and community** - exactly wha
     heroImage: null,
     heroVideo: 'https://player.vimeo.com/video/932816565',
     videoType: 'horizontal',
-    overview: `**Aquatik** is a smart water bowl system designed to give pet owners **peace of mind** by helping them monitor their pet's hydration through an integrated IoT device and companion app.
+    overview: `Aquatik is a smart water bowl system designed to give pet owners peace of mind by helping them monitor their pet's hydration through an integrated IoT device and companion app.
 
-Pet owners often struggle to track their pet's water consumption, and **insufficient water intake can lead to serious health problems** in animals. The current market lacks user-friendly products that help pet owners monitor their pet's hydration effectively.`,
+Pet owners often struggle to track their pet's water consumption, and insufficient water intake can lead to serious health problems in animals. The current market lacks user-friendly products that help pet owners monitor their pet's hydration effectively.`,
     sections: [
       {
         type: 'challenge',
@@ -484,7 +484,7 @@ We developed **detailed personas** representing different types of pet owners, e
         content: `We followed a **structured collaborative design process** where each team member contributed sketches and ideas:
 
 **Individual ideation:** Each member created multiple design variants for key screens
-**Collaborative evaluation:** We presented sketches and **voted on preferred concepts** together
+**Collaborative evaluation:** We presented sketches and voted on preferred concepts together
 **Iterative refinement:** We moved from individual concepts to unified direction through structured team collaboration
 
 This approach ensured diverse perspectives while maintaining design consistency.`,
