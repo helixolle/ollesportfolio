@@ -1,5 +1,17 @@
 import { image, video } from "framer-motion/client"
 
+// Import all images from your assets folder
+const imageModules = import.meta.glob('../assets/images/**/*.{png,jpg,jpeg,gif,svg}', { eager: true })
+
+// Convert to simple array of image URLs
+const allImages = Object.entries(imageModules).reduce((acc, [path, module]) => {
+  // Extract just the filename and folder for easy reference
+  const filename = path.replace('../assets/images/', '').replace(/\.(png|jpg|jpeg|gif|svg)$/, '')
+  acc[filename] = module.default
+  return acc
+}, {})
+
+
 export const projects = {
   // IxD Projects (extensive case studies)
   'ar-navigation': {
@@ -12,7 +24,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Bezi', 'Adobe Illustrator', 'Blender'],
     tags: ['AR', 'Cognitive Accessibility', 'Wayfinding', 'User Research'],
-    coverImage: 'public/images/thumbs/arnavigation_omslag.png',
+    coverImage: [allImages[thumbs/arnavigation_omslag]],
     heroVideo: 'https://player.vimeo.com/video/1067061936', // Add your video
     videoType: 'vertical',
     overview: 'Navigating large public indoor spaces like libraries can be challenging, especially for people with cognitive impairments. This project explored how Augmented Reality (AR) could improve wayfinding in such environments by providing real-time visual guidance directly through the user\'s smartphone camera.',
@@ -161,7 +173,7 @@ export const projects = {
         type: 'approach',
         title: 'Wireframes',
         content: 'While developing the wireframes, I identified two key interface patterns in my design and focused on expanding them: \n **Dashboard View** \n - This pattern provides a central hub where users can access key information and features. In OriginStory, this takes the form of a map of interconnected news sources, giving users an overview of how different stories relate to each other. \n **Canvas Plus Palette** \n - This pattern structures the interface with a central workspace (the canvas) and surrounding tools (the palette) for interacting with content. In OriginStory, the map view serves as the canvas, while the filter panel acts as the palette, allowing users to refine their view and focus on specific aspects of the news landscape.',
-        images: ['src/assets/${import.meta.env.BASE_URL}images/originstory/Wireframes_Main.png']
+        images: ['${import.meta.env.BASE_URL}images/originstory/Wireframes_Main.png']
       },
       {
         type: 'solution',
