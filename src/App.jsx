@@ -7,7 +7,7 @@ import ProjectPage from './components/ProjectPage'
 import MobileMenu from './components/MobileMenu'
 import CustomCursor from './components/CustomCursor'
 import FloatingThemeButton from './components/FloatingThemeButton'
-
+import ScrollToTop from './components/ScrollToTop'
 
 function AppContent() {
   const [activeSection, setActiveSection] = useState('about')
@@ -113,6 +113,7 @@ function AppContent() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
     </Router>
   )

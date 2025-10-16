@@ -6,6 +6,17 @@ import WiggleLine from './WiggleLine'
 import CompactThemeSelector from './CompactThemeSelector'
 import { getAllProjects, getProjectsByType, getProject } from '../data/projects'
 import { slideLeftVariants, fadeFloatVariants, containerVariants } from './AnimatedComponents'
+import portrait from '../assets/images/portrait2.JPG'
+
+
+
+
+
+
+
+
+
+
 
 const Sidebar = ({ activeSection, onSectionClick, isMobile, isOpen, onClose, isProjectPage, currentProject }) => {
   const navigate = useNavigate()
@@ -153,7 +164,7 @@ const SidebarContent = ({ sections, activeSection, onSectionClick, onSectionTogg
           onClick={onBackToHome}
         >
           <img 
-            src="public/images/portrait2.JPG"
+            src={portrait}
             alt="Olle Lomberg Davegård" 
             className="w-full h-full object-cover"
           />

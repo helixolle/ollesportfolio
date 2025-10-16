@@ -233,7 +233,7 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Pen & Paper', 'Video prototyping'],
     tags: ['Mobile App', 'Creator Economy', 'Community Platform', 'User Research'],
-    coverImage: '${import.meta.env.BASE_URL}images/thumbs/2gether_omslag.png',
+    coverImage: allImages['thumbs/2gether_omslag'],
     heroImage: null,
     heroVideo: 'https://player.vimeo.com/video/937755072', // Add your prototype walkthrough video
     videoType: 'horizontal',
@@ -268,7 +268,9 @@ Through persona development, I identified three key user scenarios that would dr
           'Project collaboration features are essential for community building',
           'Simple, mobile-first design is crucial for busy creators'
         ],
-        images: ['${import.meta.env.BASE_URL}images/2gether/persona.png']
+        images: [
+          allImages['2gether/persona']
+        ]
       },
       {
         type: 'approach',
@@ -280,7 +282,9 @@ Through persona development, I identified three key user scenarios that would dr
 **Scenario 3: Starting a new photo project**
 
 These scenarios guided every design decision, from information architecture to interaction patterns.`,
-        images: ['${import.meta.env.BASE_URL}images/2gether/scenario.png']
+        images: [
+          allImages['2gether/scenario']
+        ]
       },
       {
         type: 'process',
@@ -290,7 +294,10 @@ These scenarios guided every design decision, from information architecture to i
 **Sketches** → **Paper Prototype** → **Wireframes** → **Mockups** → **Interactive Prototype**
 
 Each stage built upon insights from the previous, ensuring the final design was both user-centered and technically feasible.`,
-        images: ['${import.meta.env.BASE_URL}images/2gether/sketches.png', '${import.meta.env.BASE_URL}images/2gether/Paper_prototype.png']
+        images: [
+          allImages['2gether/sketches'],
+          allImages['2gether/Paper_prototype']
+        ]
       },
       {
         type: 'solution',
@@ -332,7 +339,10 @@ I then created **four key graphical mockups** establishing a modern, cohesive de
 - **Search Results** - Clear filtering and discovery tools  
 - **Product Page** - Detailed content presentation with creator info
 - **Profile Page** - Personal dashboard for creators`,
-        images: ['${import.meta.env.BASE_URL}images/2gether/wireframes.png', '${import.meta.env.BASE_URL}images/2gether/mockup.png']
+        images: [
+          allImages['2gether/wireframes'],
+          allImages['2gether/mockup']
+        ]
       },
       {
         type: 'solution',
@@ -384,7 +394,7 @@ The result prioritizes **usability, accessibility, and community** - exactly wha
     team: 'Team of 5 interaction design students',
     tools: ['Figma', 'Miro', 'Blender', 'User Research'],
     tags: ['IoT Product', 'Pet Care', 'Mobile App', 'Physical Design', 'User Testing'],
-    coverImage: '${import.meta.env.BASE_URL}images/thumbs/aquatik_omslag.png',
+    coverImage: allImages['thumbs/aquatik_omslag'],
     heroImage: null,
     heroVideo: 'https://player.vimeo.com/video/932816565',
     videoType: 'horizontal',
@@ -451,7 +461,11 @@ We developed **detailed personas** representing different types of pet owners, e
           'Multi-pet households require individual tracking capabilities',
           'Seasonal monitoring needs vary significantly throughout the year'
         ],
-        images: ['${import.meta.env.BASE_URL}images/aquatik/personanicole.png', '${import.meta.env.BASE_URL}images/aquatik/personaoscar.png', '${import.meta.env.BASE_URL}images/aquatik/storyboard.png']
+        images: [
+          allImages['aquatik/personanicole'],
+          allImages['aquatik/personaoscar'],
+          allImages['aquatik/storyboard']
+        ]
       },
       {
         type: 'approach',
@@ -459,7 +473,9 @@ We developed **detailed personas** representing different types of pet owners, e
         content: `Based on research insights, we created a **comprehensive requirements list** defining both functional and non-functional needs for the system.
 
 **Key finding:** Respondents unanimously wanted **a system combining a physical product and an app** connected to the physical device. This insight became the foundation of our design approach.`,
-        images: ['${import.meta.env.BASE_URL}images/aquatik/req_list.png']
+        images: [
+          allImages['aquatik/req_list']
+        ]
       },
 
       {
@@ -472,7 +488,11 @@ We developed **detailed personas** representing different types of pet owners, e
 **Iterative refinement:** We moved from individual concepts to unified direction through structured team collaboration
 
 This approach ensured diverse perspectives while maintaining design consistency.`,
-        images: ['${import.meta.env.BASE_URL}images/aquatik/1registrera.png', '${import.meta.env.BASE_URL}images/aquatik/2startsida.png', '${import.meta.env.BASE_URL}images/aquatik/3halsosidan.png']
+        images: [
+          allImages['aquatik/1registrera'],
+          allImages['aquatik/2startsida'],
+          allImages['aquatik/3halsosidan']
+        ]
       },
       {
         type: 'solution',
@@ -482,7 +502,10 @@ This approach ensured diverse perspectives while maintaining design consistency.
 From wireframes, we developed **high-fidelity mockups** to establish the app's visual aesthetic and ensure a cohesive design system that would appeal to pet owners.
 
 The final step was creating a **fully interactive prototype** with realistic transitions and micro-interactions, essential for comprehensive usability testing and stakeholder validation.`,
-        images: ['${import.meta.env.BASE_URL}images/aquatik/wireframes.png', '${import.meta.env.BASE_URL}images/aquatik/mockup.png']
+        images: [
+          allImages['aquatik/wireframes'],
+          allImages['aquatik/mockup']
+        ]
       },
 
       {
@@ -499,7 +522,12 @@ The final step was creating a **fully interactive prototype** with realistic tra
 **My contribution:** Having **3D modeling experience**, I took charge of creating detailed 3D prototypes in Blender based on our collaborative initial sketches and design requirements.
 
 The final design balances **aesthetic appeal with functional sensor integration**, ensuring accurate water level monitoring while maintaining an attractive appearance for home environments.`,
-        images: ['${import.meta.env.BASE_URL}images/aquatik/sketches_physical.png', '${import.meta.env.BASE_URL}images/aquatik/StudioBlue.png', '${import.meta.env.BASE_URL}images/aquatik/StudioWhite.png', '${import.meta.env.BASE_URL}images/aquatik/StudioWood.png']
+        images: [
+          allImages['aquatik/sketches_physical'],
+          allImages['aquatik/StudioBlue'],
+          allImages['aquatik/StudioWhite'],
+          allImages['aquatik/StudioWood']
+        ]
       },
 
 
@@ -573,8 +601,8 @@ This project showcased the importance of **user-centered design processes** and 
     team: 'Solo project',
     tools: ['Blender', 'Nuke'],
     tags: ['3D Animation', 'Compositing', 'VFX', 'Personal Project'],
-    coverImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
-    heroImage: '${import.meta.env.BASE_URL}images/thumbs/heli_omslag.png',
+    coverImage: allImages['thumbs/heli_omslag'],
+    heroImage: allImages['thumbs/heli_omslag'],
     heroVideo: 'https://player.vimeo.com/video/404583460',
     videoType: 'horizontal',
     overview: `A personal VFX project compositing a 3D animated helicopter into real drone footage. This project was made for fun and became a valuable learning experience through community feedback.`,
@@ -611,8 +639,8 @@ Nuke was also used to **3D track the footage** to get accurate data for the 3D a
     team: 'VFX Artist (solo VFX work)',
     tools: ['Cinema 4D', 'Redshift', 'Fusion'],
     tags: ['3D Animation', 'Particle Systems', 'Compositing', 'Film VFX'],
-    coverImage: '${import.meta.env.BASE_URL}images/hallbart-professionell/cover.jpg',
-    heroImage: '/${import.meta.env.BASE_URL}images/thumbs/hallbart_omslag.png',
+    coverImage: allImages['thumbs/hallbart_omslag'],
+    heroImage: allImages['thumbs/hallbart_omslag'],
     heroVideo: 'https://player.vimeo.com/video/405839073',
     videoType: 'horizontal',
     overview: `VFX work for the Swedish short film **"Hållbart Professionell"** by Sebastian Johansson Micci. This was my **first "real" project** where I learned a great deal about production workflows.`,
@@ -647,7 +675,7 @@ Doing this I learned a lot by **trial and error**.`
     tools: ['Nuke'],
     tags: ['Screen Replacement', 'Tracking', 'Compositing'],
     coverImage: null,
-    heroImage: '${import.meta.env.BASE_URL}images/thumbs/screen_omslag.png',
+    heroImage: allImages['thumbs/screen_omslag'],
     heroVideo: 'https://player.vimeo.com/video/411725143',
     videoType: 'horizontal',
     overview: `A learning project focused on **advanced screen replacement techniques** using Nuke. I replaced a green screen on a phone with helicopter footage, adding realistic reflections and screen imperfections.`,
