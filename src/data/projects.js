@@ -134,8 +134,8 @@ export const projects = {
     team: 'Solo project',
     tools: ['Figma', 'Illustrator'],
     tags: ['Browser Extension', 'News Analysis', 'Interface Design', 'Prototype'],
-    coverImage: '${import.meta.env.BASE_URL}images/thumbs/OS_omslag.png',
-    heroImage: '${import.meta.env.BASE_URL}images/thumbs/OS_omslag.png',
+    coverImage: allImages['thumbs/OS_omslag'],
+    heroImage: allImages['thumbs/OS_omslag'],
     heroVideo: 'https://vimeo.com/932809964',
     videoType: 'horizontal',
     overview: 'This project aimed to develop OriginStory, a browser extension designed to empower news consumers with a deeper understanding of news narratives.',
@@ -159,7 +159,9 @@ export const projects = {
         type: 'discovery',
         title: 'User Research',
         content: 'Based on the service description provided by our teacher, I brainstormed potential user needs and benefits. After this session I discussed the result with my teacher and two of my classmates. During this session I also brainstormed around different needs and certain functions the service could have. It also resulted with three simple persona descriptions.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/Brainstorm_users.png']
+        images: [
+          allImages['originstory/Brainstorm_users']
+          ]
       },
       {
         type: 'discovery',
@@ -170,25 +172,36 @@ export const projects = {
         type: 'approach',
         title: 'Design - Sketches',
         content: 'I began by sketching a low-fidelity design of the service, which helped me identify key interface patterns. As these patterns emerged, I translated my sketches into wireframes in Figma to better understand the layout and refine the design. While working on the main page, I also explored different variations of the filter box, experimenting with ways to improve usability. These sketches later evolved into wireframes.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/skisser.png']
+        images: [
+          allImages['originstory/skisser']
+        ]
       },
       {
         type: 'approach',
         title: 'Wireframes',
         content: 'While developing the wireframes, I identified two key interface patterns in my design and focused on expanding them: \n **Dashboard View** \n - This pattern provides a central hub where users can access key information and features. In OriginStory, this takes the form of a map of interconnected news sources, giving users an overview of how different stories relate to each other. \n **Canvas Plus Palette** \n - This pattern structures the interface with a central workspace (the canvas) and surrounding tools (the palette) for interacting with content. In OriginStory, the map view serves as the canvas, while the filter panel acts as the palette, allowing users to refine their view and focus on specific aspects of the news landscape.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/Wireframes_Main.png']
+        images: [
+          allImages['originstory/Wireframes_Main']
+        ]
       },
       {
         type: 'solution',
         title: 'Interactive Prototype',
         content: 'The main page of OriginStory presents users with a clear and structured map view, offering a condensed yet comprehensive overview of key information. This interactive visualization allows users to efficiently navigate interconnected news stories. Clicking on a node reveals detailed information about that specific story. Users can also engage with the content by commenting on nodes or upvoting/downvoting others\' comments. The filter button allows users to refine their search, helping them focus on specific aspects or perspectives within a news story.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/interactive1.png', '${import.meta.env.BASE_URL}images/originstory/interactive2.png', '${import.meta.env.BASE_URL}images/originstory/interactive3.png']
+        images: [
+          allImages['originstory/interactive1'],
+          allImages['originstory/interactive2'],
+          allImages['originstory/interactive3']
+        ]
+        
       },
       {
         type: 'solution',
         title: 'Enhancing the User Experience',
         content: 'While developing the interactive prototype, I integrated two additional interface patterns to improve usability: \n **Animated Transitions** \n- Subtle animations enhance the user experience by providing visual feedback during interactions. In OriginStory, I implemented animations for hover states, selection states, and zooming within the map view, making navigation feel more intuitive and fluid. \n **Spinners and Loading Indicators** \n- To ensure users receive clear feedback when the system is processing data, I incorporated spinner animations that appear when applying filters to the map view.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/animatedtrans.gif', '${import.meta.env.BASE_URL}images/originstory/spinners.gif']
+        images: [allImages['originstory/animatedtrans'],
+          allImages['originstory/spinners']
+      ]
       },
       {
         type: 'approach',
@@ -199,7 +212,8 @@ export const projects = {
         type: 'solution',
         title: 'Logo Design',
         content: 'The "OS" logo features bold, interconnected letterforms, symbolizing the relationship between different news sources. The intentional separation within the letters represents how some sources may drift away from the original narrative—whether through shifts in terminology, framing, or bias—illustrating the evolving nature of news stories.',
-        images: ['${import.meta.env.BASE_URL}images/originstory/Logo.png']
+        images: [allImages['originstory/Logo']
+      ]
       },
       {
         type: 'conclusion',
