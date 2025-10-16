@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -r public/images dist/",
+    "build": "vite build && xcopy /E /I public\\images dist\\images",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
