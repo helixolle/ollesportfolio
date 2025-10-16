@@ -79,7 +79,10 @@ export const projects = {
         type: 'process',
         title: 'Design Development',
         content: 'The design evolved from initial sketches through wireframes and mockups to a functional AR prototype. I focused on creating the simplest possible interface while maintaining full functionality for library navigation.',
-        images: ['${import.meta.env.BASE_URL}images/ar-navigation/sketches.png', '${import.meta.env.BASE_URL}images/ar-navigation/wireframe.png', '${import.meta.env.BASE_URL}images/ar-navigation/mockup.png']
+        images: [
+          allImages['ar-navigation/sketches'],
+          allImages['ar-navigation/wireframe'],
+          allImages['ar-navigation/mockup']]
       },
       {
         type: 'solution',
